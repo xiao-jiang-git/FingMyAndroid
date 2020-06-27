@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:srcCompat="@drawable/main" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="183dp"
+                android:layout_height="154dp"
+                app:srcCompat="@drawable/touxiang" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+               >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_weight="1"
+                    android:text="Current device"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/mylocation"
+                android:layout_width="wrap_content"
+                android:layout_height="106dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Get my position" />
+
+            <Button
+                android:id="@+id/otherdevicelocation"
+                android:layout_width="wrap_content"
+                android:layout_height="106dp"
+                android:layout_below="@+id/mylocation"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Find my device" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/messageboard"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@+id/mylocation"
+            android:layout_gravity="center_horizontal"
+            android:text="Feedback" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

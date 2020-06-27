@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/t1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/driveId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        />
+
+</LinearLayout>

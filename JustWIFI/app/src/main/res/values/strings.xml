@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Find My Android</string>
+    <drawable name="org">#EC8448</drawable>
+    <string name="fairbase_login">Fairbase Login</string>
+
+</resources>

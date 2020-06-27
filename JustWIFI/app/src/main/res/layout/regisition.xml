@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="vertical"
+android:padding="16dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Register"
+    android:textColor="@color/colorPrimaryDark"
+    android:textSize="30dp"
+    android:textStyle="bold" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Welcome!"
+
+    android:textSize="20dp"
+    android:textStyle="italic" />
+
+<com.irozon.ratifier.RatifierEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/regname"
+    android:layout_marginTop="25dp"
+    android:hint="Name"
+    app:emptyMessage="Please enter email"
+    app:required="true" />
+
+<com.irozon.ratifier.RatifierEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/regemail"
+    android:layout_marginTop="25dp"
+    android:hint="Real name"
+    app:emptyMessage="Enter your real name"
+    app:required="true" />
+
+<com.irozon.ratifier.RatifierEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:id="@+id/regpassword"
+    android:hint="Password"
+    android:inputType="textPassword"
+    app:emptyMessage="Please enter Password"
+    app:invalidMessage="Password must be more than 4 digits"
+    app:minCharacters="4"
+    app:required="true" />
+
+<com.irozon.ratifier.RatifierEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:id="@+id/regphone"
+    android:hint="Phone number"
+    android:inputType="textPhonetic"
+    app:emptyMessage="Please enter phone number"
+    app:minCharacters="4"
+    app:required="true" />
+
+<Button
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:id="@+id/submit"
+    android:text="Sign Up" />
+
+</LinearLayout>
